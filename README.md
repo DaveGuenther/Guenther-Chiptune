@@ -11,6 +11,7 @@ The VCOs, LPF and VCA cores are all built around the LM13700 OTA using mostly da
 The firmware code is messy.  I've done my best to add some documentation where possible in the code and added a logical data model to track functions and global variables.  It could use some cleaning up and the arpeggio generation is horribly inefficient, but I rushed the firmware together in a hazy week while the remainder of the project took the better part of a year.
 
 Enjoy!
+Dave Guenther
 
 PLEASE NOTE: 
 
