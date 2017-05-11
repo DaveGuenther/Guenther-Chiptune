@@ -1,7 +1,10 @@
 # Guenther-Chiptune
+
 This is a repository of schematics and firmware code for building the Guenther Chiptune: An Arduino controlled monophonic MIDI capable semi-modular analog synthesizer.
 
 This synth has 4 VCOs (2 Audio, one Sub-audio and one hybrid that switches between either), a 4-pole low pass filter, a Voltage Controlled Amplifier (VCA) and two envelope generators (AR1 and AR2).  It also has an arpeggiator built in to add some videogame-esque sounds.  I never really sat down to figure out how many octaves it can work with before the tuning goes bonkers, but it appears to handle six octaves pretty well.
+
+Watch a demo video of the Guenther Chiptune: https://youtu.be/msIQIWeMnBE
 
 The VCOs, LPF and VCA cores are all built around the LM13700 OTA using mostly datasheet schematics with component values adjusted to work on +-9V supply.  Also, since the synth uses the LM13700 for all VCOs and VCF, all exponential current sources use PNP transistors.  I added in my own design for input CV signal mixing to the modules and output signal normalizers (to produce both CV and audio signals).  The CV generation via Arduino is not ideal because of the PWM noise.
 
